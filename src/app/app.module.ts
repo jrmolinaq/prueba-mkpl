@@ -1,11 +1,24 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
+import { EmptyInventoryComponent } from './empty-inventory.component';
+import { UploadModalComponent } from './upload-modal.component';
 
 @NgModule({
-	imports: [BrowserModule],
-	declarations: [AppComponent],
+	imports: [
+		BrowserModule,
+		FormsModule,
+		HttpClientModule,
+		ReactiveFormsModule
+	],
+	declarations: [
+		AppComponent,
+		EmptyInventoryComponent,
+		UploadModalComponent
+	],
 	entryComponents: [AppComponent],
 	bootstrap: [], // Don't bootstrap any component statically (see ngDoBootstrap() below)
 	providers: [],

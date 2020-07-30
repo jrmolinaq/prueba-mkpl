@@ -1,20 +1,15 @@
-<div>
-	<div>
-		<span class="tag">{{labels.portletNamespace}}:</span>
-		<span class="value">{{params.portletNamespace}}</span>
-	</div>
-	<div>
-		<span class="tag">{{labels.contextPath}}:</span>
-		<span class="value">{{params.contextPath}}</span>
-	</div>
-	<div>
-		<span class="tag">{{labels.portletElementId}}:</span>
-		<span class="value">{{params.portletElementId}}</span>
-	</div>
+<div *ngIf="paginator">
 	
-	<div>
-		<span class="tag">{{labels.configuration}}:</span>
-		<span class="value pre">{{configurationJSON}}</span>
-	</div>
+	<empty-inventory *ngIf="!paginator.length; else list"></empty-inventory>
 	
-</div>
+	<ng-template #list>
+	  <h1 class="inventory-title poppins deep-sea-green bold text-normal m-bottom-10">Inventario</h1>
+	  
+	  <!--TODO
+	  <product-list [subsidiaryId]="subsidiaryId" [paginator]="paginator"></product-list>
+	  -->
+
+	</ng-template>
+  </div>
+  
+  <upload-modal (uploaded)="onUpload()"></upload-modal>
