@@ -9,7 +9,7 @@ export class UploadFileService {
 
   uploadFile(file: File, extension: string, subsidiaryId: number): any {
     let fileUrl: any;
-    return [];
+    return true;
   }
 
   private handleError() {
@@ -17,6 +17,6 @@ export class UploadFileService {
   }
 
   uploadUnitaryProduct(body: any) {
-    return this.http.post(`ruta_endpoint/irs_single_upload`, body);
+    return true;
   }
 }

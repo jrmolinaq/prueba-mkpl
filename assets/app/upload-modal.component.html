@@ -1,5 +1,4 @@
-<div>upload-modal</div>
-<!--modal id="cv-modal" [ngSwitch]="currentModalStep" (closeModal)="closeProductUpload()" [applyPadding]="false">
+<modal id="cv-modal" [ngSwitch]="currentModalStep" (closeModal)="closeProductUpload()" [applyPadding]="false">
   <div *ngSwitchDefault class="row center modal-choose-option">
     <div class="modal-info row middle center">
       <div class="column middle">
@@ -38,12 +37,16 @@
 
   <modal-inventory *ngSwitchCase="steps.LOADING">
     <h2 class="title section m-top-4">Cargando archivo</h2>
+    <!--
     <modal-info-block [info]="file.name + '... '" bold=" está cargando" icon="loading"></modal-info-block>
+    -->
   </modal-inventory>
 
   <modal-inventory *ngSwitchCase="steps.SUCCESS">
     <h2 class="title section m-top-4">¡Felicitaciones!</h2>
+    <!--
     <modal-info-block bold="Tu archivo ha sido cargado con éxito"  icon="success-subsidiary"></modal-info-block>
+    -->
     <p class="field-text text-center m-top-3">
       En caso de presentarse alguna inconsistenia te enviaremos un correo electrónico
     </p>
@@ -64,12 +67,15 @@
 
   <modal-inventory *ngSwitchCase="steps.ERROR" [error]="modalError">
     <h2 class="title section m-top-4">Error en la carga</h2>
+    <!--
     <modal-info-block [error]="modalError" icon="red-wrong"></modal-info-block>
+    -->
     <button type="button" class="button-primary button-width m-top-7" (click)="changeModal()">
       Intentarlo de nuevo
     </button>
   </modal-inventory>
 
+  <!--
   <form [formGroup]="form" *ngSwitchCase="steps.UNIT_LOAD" (ngSubmit)="uploadProduct()">
     <div class="column unitary-modal-load" formGroupName="productInfo">
       <span class="title-medium self-center bold deep-sea-green m-bottom-4">Carga de inventario individual</span>
@@ -95,6 +101,6 @@
       </div>
     </div>
   </form>
+  -->
 
 </modal>
--->

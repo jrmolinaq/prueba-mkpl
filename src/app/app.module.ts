@@ -5,6 +5,9 @@ import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { EmptyInventoryComponent } from './empty-inventory.component';
+import { InputFileComponent } from './input-file.component';
+import { ModalInventoryComponent } from './modal-inventory.component';
+import { ModalComponent } from './modal.component';
 import { UploadModalComponent } from './upload-modal.component';
 
 @NgModule({
@@ -17,6 +20,9 @@ import { UploadModalComponent } from './upload-modal.component';
 	declarations: [
 		AppComponent,
 		EmptyInventoryComponent,
+		InputFileComponent,
+		ModalInventoryComponent,
+		ModalComponent,
 		UploadModalComponent
 	],
 	entryComponents: [AppComponent],

@@ -46,22 +46,26 @@ export class UploadModalComponent implements OnInit {
   upload(file: File) {
     this.file = file;
     const fileExtension = file.name.split('.').pop();
+
     if (fileExtension !== 'xls' && fileExtension !== 'xlsx') {
       this.modalError = 'El archivo debe tener extensión .xls o xlsx';
       return this.changeModal(this.steps.ERROR);
     }
+
     if (file.size > MAX_FILE_SIZE) {
       this.modalError = 'El archivo sobre pasa el peso máximo.';
       return this.changeModal(this.steps.ERROR);
     }
+
     this.changeModal(this.steps.LOADING);
-    this.uploadFileService.uploadFile(file, fileExtension, this.subsidiaryId).subscribe({
-      next: () => this.uploadSuccess(),
-      error: (error: string) => {
-        this.modalError = error;
+    let flag: boolean = this.uploadFileService.uploadFile(file, fileExtension, this.subsidiaryId);
+    
+    if (flag) {
+      this.uploadSuccess();
+    } else {
+        this.modalError = "Ocurrió un error";
         this.changeModal(this.steps.ERROR);
-      }
-    });
+    }
   }
 
   openModal(id: string) {
@@ -97,17 +101,17 @@ export class UploadModalComponent implements OnInit {
       stock: this.form.get('productInfo').value.quantity,
       quality: this.form.get('productInfo').value.quality
     };
-    this.uploadFileService.uploadUnitaryProduct(body).subscribe({
-      next: () => {
-        this.changeModal(this.steps.SUCCESS_INDIVIDUAL);
-        this.uploaded.emit();
-        this.form.reset();
-      },
-      error: () => {
-        this.modalError = 'El producto no pudo ser cargado';
-        this.changeModal(this.steps.ERROR);
-        this.form.reset();
-      }
-    });
+
+    let flag: boolean = this.uploadFileService.uploadUnitaryProduct(body);
+
+    if (flag) {
+      this.changeModal(this.steps.SUCCESS_INDIVIDUAL);
+      this.uploaded.emit();
+      this.form.reset();
+    } else {
+      this.modalError = 'El producto no pudo ser cargado';
+      this.changeModal(this.steps.ERROR);
+      this.form.reset();
+    }
   }
 }

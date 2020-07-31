@@ -16,6 +16,6 @@ export class ProductService {
     let p3: Product = {reference: 'ABCDE789', name: 'Producto 3', stock: 30, quality: 'GENUINE', price: 300000, 
     applicability: '', irs: '', validation: '', provider: '', notification: true, registerId: '', registerDate: '', externalSubsidiaryId: '', externalDataSendId: ''};
 
-    return  Math.random() >= 0.5? [p1, p2, p3]: [];;
+    return  Math.random() >= 0.5? [p1, p2, p3]: [];
   }
 }

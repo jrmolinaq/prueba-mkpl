@@ -21,8 +21,17 @@ export class ModalService {
   isOpen() {
     return this.modalIsOpen.asObservable();
   }
+  
   open(id: string) {
+
+    // TODO: borrar
+    console.log('***** modals ', this.modals);
+
     const modal: any = this.modals.filter(x => x.id === id)[0];
+
+    // TODO: borrar
+    console.log('***** modal ', modal);
+
     modal.open();
     this.modalIsOpen.next(true);
   }
