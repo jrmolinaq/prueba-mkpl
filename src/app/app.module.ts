@@ -6,9 +6,14 @@ import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { EmptyInventoryComponent } from './empty-inventory.component';
 import { InputFileComponent } from './input-file.component';
-import { ModalInventoryComponent } from './modal-inventory.component';
 import { ModalComponent } from './modal.component';
+import { ModalInfoBlockComponent } from './modal-info-block.component';
+import { ModalInventoryComponent } from './modal-inventory.component';
 import { UploadModalComponent } from './upload-modal.component';
+
+import { ShortLargeStringsPipe } from './pipes/short-large-strings.pipe';
+import { InputControlComponent } from './input-control.component';
+import { SelectControlComponent } from './select-control.component';
 
 @NgModule({
 	imports: [
@@ -19,15 +24,20 @@ import { UploadModalComponent } from './upload-modal.component';
 	],
 	declarations: [
 		AppComponent,
+		InputControlComponent,
 		EmptyInventoryComponent,
 		InputFileComponent,
-		ModalInventoryComponent,
 		ModalComponent,
-		UploadModalComponent
+		ModalInfoBlockComponent,
+		ModalInventoryComponent,
+		SelectControlComponent,
+		UploadModalComponent,
+		ShortLargeStringsPipe
 	],
+	// exports: [ShortLargeStringsPipe],
 	entryComponents: [AppComponent],
 	bootstrap: [], // Don't bootstrap any component statically (see ngDoBootstrap() below)
-	providers: [],
+	providers: [ShortLargeStringsPipe],
 })
 export class AppModule {
 	// Avoid bootstraping any component statically because we need to attach to

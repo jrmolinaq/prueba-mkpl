@@ -1,3 +1,5 @@
+<link href="/o/prueba-mkpl/css/application.scss" rel="stylesheet">
+
 <div *ngIf="paginator">
 	
 	<empty-inventory *ngIf="!paginator.length; else list"></empty-inventory>
@@ -10,6 +12,6 @@
 	  -->
 
 	</ng-template>
-  </div>
+</div>
   
-  <upload-modal (uploaded)="onUpload()"></upload-modal>
+ <upload-modal (uploaded)="onUpload()"></upload-modal>
