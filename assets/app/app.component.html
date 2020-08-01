@@ -1,5 +1,3 @@
-<link href="/o/prueba-mkpl/css/application.scss" rel="stylesheet">
-
 <div *ngIf="paginator">
 	
 	<empty-inventory *ngIf="!paginator.length; else list"></empty-inventory>
@@ -7,9 +5,7 @@
 	<ng-template #list>
 	  <h1 class="inventory-title poppins deep-sea-green bold text-normal m-bottom-10">Inventario</h1>
 	  
-	  <!--TODO
 	  <product-list [subsidiaryId]="subsidiaryId" [paginator]="paginator"></product-list>
-	  -->
 
 	</ng-template>
 </div>
