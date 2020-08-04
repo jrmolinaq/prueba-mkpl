@@ -44,7 +44,10 @@
   font-weight: bold;
   letter-spacing: 0.17px;
   line-height: 16px;
+  border: none;
+  background: none;
 }
+
 .link:hover {
   color: #565656;
 }

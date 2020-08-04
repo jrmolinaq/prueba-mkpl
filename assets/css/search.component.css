@@ -8,15 +8,25 @@
 }
 
 .search-input {
+  /*
   background-color: #F8F8F8;
   border-radius: 8px;
+  */
   color: #638A99;
   height: 38px;
   padding: 12px 38px 12px 12px;
   width: 368px;
+  border: none;
+  background: none;
 }
+
 .search-input::placeholder {
   color: #638A99;
+}
+
+.search-button {
+  border: none;
+  background: none;
 }
 
 .search-button::after {
