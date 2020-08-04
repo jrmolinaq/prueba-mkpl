@@ -1,0 +1,158 @@
+
+.icon::before {
+  color: inherit;
+  width: 1em;
+  height: 1em;
+}
+
+.icon-empty-list:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-garage-car:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-list:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-arrows:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-box-fail:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-box-ok:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-cam:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-eye-off:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-user:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-exit:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-folder:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-bell:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-base-box:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-box-check:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-check-box:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-close:before {
+    content: url(/o/prueba-mkpl/icons/close.svg);
+}
+
+.icon-confirmation-check:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-confirmation-error:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-cross:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-eye-on:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-hand-box:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-house:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-long-down-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-long-left-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-long-right-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-long-up-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-message:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-pencil:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-search:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-short-down-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-short-left-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-short-right-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-short-up-arrow:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-empty-incidents:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-empty-notification:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-cw:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-funnel:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
+
+.icon-magnifying-glass:before {
+    content: url(/o/prueba-mkpl/icons/yin-yang.svg);
+}
