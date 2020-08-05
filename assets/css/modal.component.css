@@ -1,7 +1,7 @@
-:host {
+.xxx {
   display: none;
 }
-:host .modal-container {
+.xxx .modal-container {
   bottom: 0;
   height: 100vh;
   left: 0;
@@ -12,7 +12,7 @@
   width: 100vw;
   z-index: 1000;
 }
-:host .modal-container::before {
+.xxx .modal-container::before {
   background-color: rgba(0, 0, 0, 0.5);
   content: "";
   height: 100%;
@@ -22,7 +22,7 @@
   width: 100%;
   z-index: 900;
 }
-:host .modal-container::after {
+.xxx .modal-container::after {
   background-color: #C2C2C2;
   content: "";
   height: 100%;
@@ -33,7 +33,7 @@
   width: 100%;
   z-index: 950;
 }
-:host .modal-container .modal-body {
+.xxx .modal-container .modal-body {
   background: #FFF;
   border-radius: 8px;
   overflow: hidden;
